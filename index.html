@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* "hero" 클래스에 스타일 적용 */
+        .hero {
+            background-color: #333; /* 배경 색상을 어두운 색상으로 설정하세요 */
+            color: #fff; /* 텍스트 색상을 흰 색상으로 설정하세요 */
+            text-align: center; /* 텍스트 가운데 정렬 */
+            padding: 20px; /* 여백 추가 */
+        }
+        
+        /* "product-container" 클래스에 스타일 적용하여 카드를 가로로 정렬 */
+        .product-container {
+            display: flex; /* 가로로 정렬하기 위해 Flexbox 사용 */
+            justify-content: center; /* 가운데 정렬 */
+            gap: 20px; /* 카드 사이 여백 추가 */
+        }
+        
+        /* "product-card" 클래스에 스타일 적용 */
+        .product-card {
+            background-color: #f4f4f4; /* 카드 배경 색상을 연한 회색으로 설정하세요 */
+            color: #333; /* 텍스트 색상을 어두운 색상으로 설정하세요 */
+            padding: 20px; /* 여백 추가 */
+            max-width: 300px; /* 최대 너비 설정 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 추가 */
+            border-radius: 10px; /* 모서리 둥글게 */
+            transition: transform 0.2s; /* 모션을 위한 트랜지션 설정 */
+        }
+
+        /* 이미지 크기 조절 */
+        .product-card img {
+            max-width: 100%; /* 이미지 최대 너비 설정 */
+            max-height: 200px; /* 이미지 최대 높이 설정 */
+        }
+
+        /* 호버 상태에서 모션 효과 추가 */
+        .product-card:hover {
+            transform: scale(1.05); /* 호버 상태에서 확대 */
+            background-color: #FF6F61; /* 호버 상태에서 배경 색상 변경 */
+            color: #fff; /* 호버 상태에서 텍스트 색상 변경 */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>나만의 르탄마켓</h1>
+        <p>집에 있는 좋은 물건을 팝니다!</p>
+    </div>
+    
+    <!-- 상품 카드 컨테이너 -->
+    <div class="product-container">
+        <!-- 첫 번째 상품 카드 -->
+        <div class="product-card">
+            <img src="다운로드2.jpg" alt="상품 이미지 1">
+            <h2>냄비</h2>
+            <p>과거 냄비</p>
+            <p>가격: 1억 </p>
+            <p>상태: 중고</p>
+            <p>판매자: ㅇㅇ</p>
+            <a href="https://mblogthumb-phinf.pstatic.net/MjAxNzAxMjdfMTY5/MDAxNDg1NTA0MTAzNjI5.RCmlojv_1VFvppc4ryFrwUmyt6mgyAX52mDd_HA2xlcg._m3NMeItEpAq1H3foUDFU8vBfUU4axNbEhfWoUMSgNMg.JPEG.chefjhkim/%EC%B2%A0%EC%A0%95__%EA%B3%A0%EB%A0%A4%EC%8B%9C%EB%8C%806010.JPG?type=w800" class="btn btn-primary">상품 상세 정보</a>
+        </div>
+
+        <!-- 두 번째 상품 카드 -->
+        <div class="product-card">
+            <img src="다운로드1.jpg" alt="상품 이미지 2">
+            <h2>냉장고</h2>
+            <p>과거 냉장고</p>
+            <p>가격: 1억</p>
+            <p>상태: 중고</p>
+            <p>판매자: ㅇㅇ2</p>
+            <a href="https://muzine.museum.go.kr/2012/images/culture/41th/culture01_03_img.jpg" class="btn btn-primary">상품 상세 정보</a>
+        </div>
+    </div>
+</body>
+</html>
